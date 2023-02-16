@@ -15,15 +15,15 @@ const app = express();
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
+//have server use router
+app.use('/', htmlRoutes);
+app.use('/api', apiRoutes)
+
 //use express middleware static to allow static assets
 app.use(express.static('public'));
 
-//GET route for notes page
-app.get('/notes', (req, res) =>
-  res.sendFile(path.join(__dirname, '../Develop/public/notes.html'))
-);
 
 app.listen(PORT, () =>
-  console.log(`App listening at http://localhost:${PORT}`)
+  console.log(`Server listening at http://localhost:${PORT}`)
 );
 
