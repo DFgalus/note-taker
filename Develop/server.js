@@ -1,15 +1,15 @@
 
 //import dependencies
 const express = require('express');
-const path = require('path');
-
+const app = express();
 //port
 const PORT = process.env.PORT || 3001;
 
-//add database to store notes
-const dbData = require('./db/db.json');
+//import routes
+const htmlRoutes = require('./routes/htmlRoutes');
+const apiRoutes;
 
-const app = express();
+
 
 // Middleware for parsing JSON and urlencoded form data
 app.use(express.json());
