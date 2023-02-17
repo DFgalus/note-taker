@@ -6,8 +6,8 @@ const app = express();
 const PORT = process.env.PORT || 3001;
 
 //import routes
-const htmlRoutes = require('../Develop/routes/htmlRoutes');
-// const apiRoutes;
+const htmlRoutes = require('./routes/html');
+const apiRoutes = require('./routes/api')
 
 
 
@@ -17,7 +17,7 @@ app.use(express.urlencoded({ extended: true }));
 
 //have server use router
 app.use('/', htmlRoutes);
-// app.use('/api', apiRoutes);
+app.use('/api', apiRoutes);
 
 //use express middleware static to allow static assets
 app.use(express.static('public'));
