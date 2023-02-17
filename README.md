@@ -24,5 +24,5 @@ Clone my code from the repository on my GitHub: [DFgalus](https//:github.com/DFg
 Feel free to reach me with any further questions, my GitHub is: [DFgalus](https//:github.com/DFgalus), and my email is: [damiangalus7@gmail.com](mailto:damiangalus7@gmail.com)
 
 # Link to Deployed Application
-![Deployed-App](https://express-note-taker-dfgalus.herokuapp.com/)
+[Deployed-App](https://express-note-taker-dfgalus.herokuapp.com/)
   
